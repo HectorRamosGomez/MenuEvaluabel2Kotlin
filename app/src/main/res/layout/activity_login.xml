@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/TextoLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/TextoNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre:"
+        android:layout_below="@+id/TextoLogin"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/EditNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextoNombre"
+        android:hint="Introduce tu nombre"
+        android:inputType="textPersonName"/>
+
+    <TextView
+        android:id="@+id/TextoApellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apellidos:"
+        android:layout_below="@+id/EditNombre"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/EditApellidos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextoApellidos"
+        android:hint="Introduce tus apellidos"
+        android:inputType="textPersonName"/>
+
+    <TextView
+        android:id="@+id/TextoCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Correo:"
+        android:layout_below="@+id/EditApellidos"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/EditCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextoCorreo"
+        android:hint="ejemplo@correo.com"
+        android:inputType="textEmailAddress"/>
+
+    <TextView
+        android:id="@+id/TextoTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teléfono:"
+        android:layout_below="@+id/EditCorreo"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/EditTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextoTelefono"
+        android:hint="600000000"
+        android:inputType="phone"/>
+
+    <TextView
+        android:id="@+id/TextoDNI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DNI:"
+        android:layout_below="@+id/EditTelefono"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/EditDNI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextoDNI"
+        android:hint="12345678X"
+        android:inputType="textCapCharacters"/>
+
+    <Button
+        android:id="@+id/BotonFoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EditDNI"
+        android:layout_marginTop="20dp"
+        android:text="Fotografiar DNI" />
+
+
+    <Button
+        android:id="@+id/BotonEnviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BotonFoto"
+        android:layout_marginTop="20dp"
+        android:text="Enviar"
+        android:backgroundTint="#4CAF50" />
+
+</RelativeLayout>

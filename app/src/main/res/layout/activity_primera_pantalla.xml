@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/textoPrincipal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="MENU DE OPCIONES"
+        android:textSize="40dp"/>
+
+    <Button
+        android:id="@+id/BotonDados"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00BCD4"
+        android:text="Juego dado"
+        android:textSize="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_below="@id/textoPrincipal"/>
+
+    <Button
+        android:id="@+id/BotonLogin"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00BCD4"
+        android:text="Login"
+        android:layout_marginLeft="200dp"
+        android:textSize="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_below="@id/textoPrincipal"/>
+
+
+
+
+</RelativeLayout>

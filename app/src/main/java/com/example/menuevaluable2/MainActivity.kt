@@ -1,6 +1,9 @@
 package com.example.menuevaluable2
 
+import android.R.attr.button
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -14,31 +17,14 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        setContentView(R.layout.activity_primera_pantalla)
 
-        binding.botonGirar.setOnClickListener {
-            dadoNumero = generarNumeroRandom()
-            binding.textoInstrucciones.text = dadoNumero.toString()
-            asignarFoto(dadoNumero)
+        val botonDado = findViewById<Button>(R.id.BotonDados)
+        val botonLogin = findViewById<Button>(R.id.BotonLogin)
 
+        botonDado.setOnClickListener {
+            val intent = Intent(this, DadosActivity::class.java)
+            startActivity(intent)
         }
-
-    }
-
-    private fun generarNumeroRandom(): Int {
-        return (1..6).random()
-    }
-
-    private fun asignarFoto(dadoNumero: Int) {
-        var fotos = when(dadoNumero) {
-            1 -> R.drawable.dice_1
-            2 -> R.drawable.dice_2
-            3 -> R.drawable.dice_3
-            4 -> R.drawable.dice_4
-            5 -> R.drawable.dice_5
-            else -> R.drawable.dice_6
-        }
-        binding.foto.setImageResource(fotos)
     }
 }
